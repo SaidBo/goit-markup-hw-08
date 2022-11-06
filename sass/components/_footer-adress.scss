@@ -1,0 +1,55 @@
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.adress .item {
+  width: 231px;
+  margin-bottom: 9px;
+}
+
+.adress .item:last-child {
+  margin-bottom: 0;
+}
+
+.adress-link {
+  display: block;
+
+  color: var(--white-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress .link {
+  display: block;
+
+  color: var(--adress-text-color);
+
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.adress-link:hover,
+.adress-link:focus {
+  color: var(--accent-color);
+}
+
+.adress .link:hover,
+.adress .link:hover {
+  color: var(--accent-color);
+}

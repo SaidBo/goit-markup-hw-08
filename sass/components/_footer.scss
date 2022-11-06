@@ -1,0 +1,23 @@
+.footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: var(--background-color-hero-footer);
+}
+
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.text-footer {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
