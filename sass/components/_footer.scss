@@ -7,11 +7,17 @@
 
 .footer .container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
 }
 
 .text-footer {
   margin-bottom: 20px;
+
+  text-align: center;
 
   font-weight: 700;
   font-size: 14px;
@@ -20,4 +26,8 @@
   text-transform: uppercase;
 
   color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

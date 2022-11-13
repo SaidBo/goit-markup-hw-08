@@ -23,7 +23,6 @@
   fill: currentColor;
 }
 
-
 .soc-link:hover,
 .soc-link:focus {
   background-color: var(--accent-color);
@@ -31,19 +30,26 @@
 }
 
 // socials-footer
+
 .soc-footer {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
-  
-  .soc-footer .soc-link {
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .soc-footer .soc-link:hover,
-  .soc-footer .soc-link:focus {
-    background-color: var(--accent-color);
-  }
-  
-  .soc-footer .soc-icon {
-    fill: var(--white-color);
-  }
+}
+
+.soc-footer .soc-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.soc-footer .soc-link:hover,
+.soc-footer .soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.soc-footer .soc-icon {
+  fill: var(--white-color);
+}

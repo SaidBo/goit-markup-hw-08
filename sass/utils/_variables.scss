@@ -10,17 +10,22 @@
 // $adress-text-color: #ffffff99;
 
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
-    --white-color: #ffffff;
-    --background-color: #ffffff;
-    --background-color-hero-footer: #2f303a;
-    --bg-btn-color: #f5f4fa;
-    --black-color: #000000;
-    --border-color: #eeeeee;
-    --adress-text-color: #ffffff99;
-  } 
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --background-color: #ffffff;
+  --background-color-hero-footer: #2f303a;
+  --bg-btn-color: #f5f4fa;
+  --black-color: #000000;
+  --border-color: #eeeeee;
+  --adress-text-color: #ffffff99;
+  --bck-gradient: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+}
 
 button {
   cursor: pointer;
@@ -48,6 +53,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+
+  width: 100%;
 }
 
 textarea {

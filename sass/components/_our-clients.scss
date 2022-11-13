@@ -1,19 +1,22 @@
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .client-item {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-  width: 170px;
+  width: calc((100% - 30px) / 2);
   height: 92px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
-/* .client-item + .client-item {
-    margin-left: 30px;
-  } */
 
 .client-link {
   display: flex;
