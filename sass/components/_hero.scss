@@ -1,7 +1,7 @@
 .hero {
   background-color: var(--background-color-hero-footer);
 
-  background-image: var(--bck-gradient), url(/images/bck-image-mob.jpeg);
+  background-image: var(--bck-gradient), url(../images/bck-image-mob.jpeg);
 
   background-repeat: no-repeat;
   background-position: center;
@@ -14,26 +14,26 @@
   padding-bottom: 118px;
 
   @include retina {
-    background-image: var(--bck-gradient), url(/images/bck-image-mob-2x.jpeg);
+    background-image: var(--bck-gradient), url(../images/bck-image-mob-2x.jpeg);
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 180px;
     padding-bottom: 180px;
-    background-image: var(--bck-gradient), url(/images/bck-image-tablet.jpeg);
+    background-image: var(--bck-gradient), url(../images/bck-image-tablet.jpeg);
 
     @include retina {
       background-image: var(--bck-gradient),
-        url(/images/bck-image-tablet-2x.jpeg);
+        url(../images/bck-image-tablet-2x.jpeg);
     }
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: var(--bck-gradient), url(/images/bck-image.jpg);
+    background-image: var(--bck-gradient), url(../images/bck-image.jpg);
     @include retina {
-      background-image: var(--bck-gradient), url(/images/bck-image-2x.jpeg);
+      background-image: var(--bck-gradient), url(../images/bck-image-2x.jpeg);
     }
   }
 }
