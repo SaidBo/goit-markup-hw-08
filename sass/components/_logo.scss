@@ -1,4 +1,7 @@
 .logo {
+padding-top: 16px;
+padding-bottom: 16px;
+
   color: var(--accent-color);
 
   font-family: Raleway, sans-serif;
@@ -14,4 +17,12 @@
 
 .logo__text--white {
   color: var(--background-color);
+}
+
+.mob-menu-open-btn {
+  margin-left: auto;
+  border: none;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

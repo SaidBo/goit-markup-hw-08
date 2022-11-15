@@ -53,10 +53,12 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-
-  width: 100%;
 }
 
 textarea {
   resize: none;
+}
+
+.no-scroll {
+  overflow: hidden;
 }

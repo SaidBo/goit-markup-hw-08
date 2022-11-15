@@ -22,7 +22,7 @@
   <body class="page">
     <!-- Шапка сайта -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a href="./index.html" class="logo"
@@ -60,8 +60,64 @@
             >
           </li>
         </ul>
+        <button type="button" class="mob-menu-open-btn" data-menu-open>
+          <svg class="burger" width="24" height="16">
+            <use href=".//images/symbol-defs.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="mob-menu-close-btn" data-menu-close>
+              x
+            </button>
+            <ul class="mob-menu-list list">
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link current">Студія</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="./portfolio.html" class="mob-menu__link">Портфоліо</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mob-menu__bottom">
+            <ul class="mob-contact list">
+              <li class="mob-contact__item">
+                <a href="tel:+380961111111" class="mob-contact__tel">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact__item">
+                <a href="mailto:info@devstudio.com" class="mob-contact__email">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-soc list">
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">instagram</a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">twitter</a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">facebook</a>
+              </li>
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!-- Герой -->
@@ -80,7 +136,7 @@
       <!-- переваги -->
       <section class="section benefits">
         <div class="container benefits__container">
-          <h2 class="section-title visually-hidden">Наші переваги</h2>
+          <h2 class="section-title is-hidden">Наші переваги</h2>
 
           <ul class="illustration list">
             <li class="illustration__item">
@@ -182,15 +238,15 @@
               <picture>
                 <source
                   srcset="
-                    ./images/teams-images/igor-mob.jpeg    1x,
-                    ./images/teams-images/igor-mob-2x.jpeg 2x
+                    ./images/teams-images/igor.jpeg    1x,
+                    ./images/teams-images/igor-2x.jpeg 2x
                   "
                   media="(min-width: 1200px)"
                 />
                 <source
                   srcset="
-                    ./images/teams-images/igor-mob.jpeg    1x,
-                    ./images/teams-images/igor-mob-2x.jpeg 2x
+                    ./images/teams-images/igor-tab.jpeg    1x,
+                    ./images/teams-images/igor-tab-2x.jpeg 2x
                   "
                   media="(min-width: 768px)"
                 />
@@ -201,17 +257,13 @@
                   "
                   media="(max-width: 767px)"
                 />
+                <img
+                  src="./images/teams-images/igor-mob.jpeg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  height="460"
+                />
               </picture>
-              <img
-                srcset="
-                  ./images/teams-images/igor-mob.jpeg    1x,
-                  ./images/teams-images/igor-mob-2x.jpeg 2x
-                "
-                src="./images/teams-images/igor-mob.jpeg"
-                alt="Ігор Дем'яненко"
-                width="450"
-                height="260"
-              />
               <div class="teams">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p class="text">Product Designer</p>
@@ -225,7 +277,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -235,7 +286,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -245,7 +295,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -258,17 +307,36 @@
                 </ul>
               </div>
             </li>
+
             <li class="item">
-              <img
-                srcset="
-                  ./images/teams-images/olga-mob.jpeg    1x,
-                  ./images/teams-images/olga-mob-2x.jpeg 2x
-                "
-                src="./images/teams-images/olga-mob.jpeg"
-                alt="Ольга Рєпіна"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams-images/olga.jpeg    1x,
+                    ./images/teams-images/olga-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/olga-tab.jpeg    1x,
+                    ./images/teams-images/olga-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/olga-mob.jpeg    1x,
+                    ./images/teams-images/olga-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams-images/olga-mob.jpeg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                />
+              </picture>
               <div class="teams">
                 <h3 class="title">Ольга Рєпіна</h3>
                 <p class="text">Frontend Developer</p>
@@ -282,7 +350,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -292,7 +359,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -302,7 +368,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -315,17 +380,37 @@
                 </ul>
               </div>
             </li>
+
             <li class="item">
-              <img
-                srcset="
-                  ./images/teams-images/mykola-mob.jpeg    1x,
-                  ./images/teams-images/mykola-mob-2x.jpeg 2x
-                "
-                src="./images/teams-images/mykola-mob.jpeg"
-                alt="Микола Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams-images/mykola.jpeg    1x,
+                    ./images/teams-images/mykola-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/mykola-tab.jpeg    1x,
+                    ./images/teams-images/mykola-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/mykola-mob.jpeg    1x,
+                    ./images/teams-images/mykola-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams-images/mykola-mob.jpeg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="teams">
                 <h3 class="title">Микола Тарасов</h3>
                 <p class="text">Marketing</p>
@@ -339,7 +424,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -349,7 +433,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -359,7 +442,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -372,17 +454,36 @@
                 </ul>
               </div>
             </li>
+
             <li class="item">
-              <img
-                srcset="
-                  ./images/teams-images/mikhaylo-mob.jpeg    1x,
-                  ./images/teams-images/mikhaylo-mob-2x.jpeg 2x
-                "
-                src="./images/teams-images/mikhaylo-mob.jpeg"
-                alt="Михайло Єрмаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/teams-images/mikhaylo.jpeg    1x,
+                    ./images/teams-images/mikhaylo-2x.jpeg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/mikhaylo-tab.jpeg    1x,
+                    ./images/teams-images/mikhaylo-tab-2x.jpeg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/teams-images/mikhaylo-mob.jpeg    1x,
+                    ./images/teams-images/mikhaylo-mob-2x.jpeg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/teams-images/mikhaylo-mob.jpeg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                />
+              </picture>
               <div class="teams">
                 <h3 class="title">Михайло Єрмаков</h3>
                 <p class="text">UI Designer</p>
@@ -396,7 +497,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -406,7 +506,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -416,7 +515,6 @@
                       </svg>
                     </a>
                   </li>
-
                   <li class="soc-item">
                     <a class="soc-link" href="">
                       <svg class="soc-icon" width="20" height="20">
@@ -658,5 +756,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
