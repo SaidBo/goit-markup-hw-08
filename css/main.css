@@ -132,6 +132,10 @@ textarea {
   border: none;
 }
 
+.mob-menu-close-btn:hover, .mob-menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
 .mob-menu-list {
   margin-bottom: 50px;
 }
@@ -214,6 +218,7 @@ textarea {
 .mob-menu-open-btn {
   margin-left: auto;
   border: none;
+  background-color: var(--white-color);
 }
 @media screen and (min-width: 768px) {
   .mob-menu-open-btn {

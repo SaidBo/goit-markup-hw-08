@@ -35,6 +35,10 @@
   border: none;
 }
 
+.mob-menu-close-btn:hover, .mob-menu-close-btn:focus {
+  fill: var(--accent-color);
+}
+
 .mob-menu-list {
   margin-bottom: 50px;
 }

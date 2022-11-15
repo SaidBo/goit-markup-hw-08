@@ -22,6 +22,7 @@ padding-bottom: 16px;
 .mob-menu-open-btn {
   margin-left: auto;
   border: none;
+  background-color: var(--white-color);
   @media screen and (min-width: 768px) {
     display: none;
   }
